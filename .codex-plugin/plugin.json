@@ -1,0 +1,30 @@
+{
+  "name": "road-food-planner",
+  "version": "0.1.0",
+  "description": "Plan a feasible meal around a trip without making the traveler late.",
+  "author": {
+    "name": "Road Food Planner Team"
+  },
+  "license": "MIT",
+  "keywords": ["travel", "food", "route", "restaurant", "schedule"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "路上吃什么",
+    "shortDescription": "结合路线和时间余量推荐真正顺路的餐厅",
+    "longDescription": "根据起点、终点、到达期限和饮食偏好，计算直达时间、真实绕路成本与安全缓冲，过滤会导致迟到的方案。",
+    "developerName": "Road Food Planner Team",
+    "category": "Lifestyle",
+    "capabilities": ["Route planning", "Restaurant discovery", "Schedule optimization"],
+    "defaultPrompt": [
+      "我几点前要到目的地，帮我规划路上吃什么",
+      "找一家最多绕路 10 分钟的餐厅",
+      "这趟行程适合沿途吃，还是到达后再吃？"
+    ],
+    "brandColor": "#F97316",
+    "screenshots": [
+      "./assets/urgent-trip.png",
+      "./assets/leisure-trip.png"
+    ]
+  }
+}

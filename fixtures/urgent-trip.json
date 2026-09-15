@@ -1,0 +1,56 @@
+{
+  "origin": "上海市静安区南京西路",
+  "destination": "上海市杨浦区五角场",
+  "departAt": "2026-09-15T12:00:00+08:00",
+  "arriveBy": "2026-09-15T13:30:00+08:00",
+  "purpose": "13:30 必须到校上课",
+  "travelMode": "driving",
+  "mealStyle": "quick_meal",
+  "directTravelMinutes": 60,
+  "arrivalBufferMinutes": 10,
+  "maxRouteDetourMinutes": 10,
+  "cuisinePreferences": ["面", "便当"],
+  "candidateRestaurants": [
+    {
+      "id": "start-noodle",
+      "name": "出发点快取面馆",
+      "zone": "origin",
+      "timing": "before_departure",
+      "routeViaMinutes": 62,
+      "parkingMinutes": 0,
+      "walkMinutes": 1,
+      "queueMinutes": 3,
+      "mealMinutes": 8,
+      "rating": 4.3,
+      "openState": "open",
+      "tags": ["面", "快餐"]
+    },
+    {
+      "id": "route-hotpot",
+      "name": "沿途人气火锅",
+      "zone": "route",
+      "timing": "enroute",
+      "routeViaMinutes": 68,
+      "parkingMinutes": 8,
+      "walkMinutes": 4,
+      "queueMinutes": 15,
+      "mealMinutes": 45,
+      "rating": 4.8,
+      "openState": "open",
+      "tags": ["火锅"]
+    },
+    {
+      "id": "destination-bento",
+      "name": "终点便当店",
+      "zone": "destination",
+      "timing": "after_arrival",
+      "parkingMinutes": 2,
+      "walkMinutes": 3,
+      "queueMinutes": 5,
+      "mealMinutes": 12,
+      "rating": 4.5,
+      "openState": "unknown",
+      "tags": ["便当", "快餐"]
+    }
+  ]
+}

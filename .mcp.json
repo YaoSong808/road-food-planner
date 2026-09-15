@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "road-food-planner": {
+      "command": "node",
+      "args": ["server/index.mjs"],
+      "cwd": ".",
+      "enabled": true,
+      "env_vars": ["AMAP_WEB_SERVICE_KEY"],
+      "startup_timeout_sec": 15,
+      "tool_timeout_sec": 60
+    }
+  }
+}

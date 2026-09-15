@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>路上吃什么 · 产品预览</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">吃</span>
+          <div>
+            <strong>路上吃什么</strong>
+            <span>路线与时间共同决定的一顿饭</span>
+          </div>
+        </div>
+        <div class="trip-state"><i></i><span id="trip-state">正在规划</span></div>
+      </header>
+
+      <section class="workspace">
+        <section class="route-panel">
+          <div class="route-heading">
+            <div>
+              <p class="eyebrow" id="eyebrow"></p>
+              <h1 id="headline"></h1>
+              <p class="subhead" id="subhead"></p>
+            </div>
+            <div class="time-window">
+              <span>最晚到达</span>
+              <strong id="arrive-by"></strong>
+            </div>
+          </div>
+
+          <div class="map-card" id="map-card">
+            <div class="map-grid"></div>
+            <div class="road road-one"></div>
+            <div class="road road-two"></div>
+            <div class="road road-three"></div>
+            <div class="route-line"></div>
+            <div class="route-progress"></div>
+            <div class="marker marker-a"><b>A</b><span id="origin-label"></span></div>
+            <div class="marker marker-food"><b>🍜</b><span id="food-label"></span></div>
+            <div class="marker marker-b"><b>B</b><span id="destination-label"></span></div>
+            <div class="map-pill" id="map-pill"></div>
+          </div>
+
+          <div class="budget-row">
+            <article><span>直达车程</span><strong id="direct-time"></strong><small>实时路线估算</small></article>
+            <article><span>安全缓冲</span><strong id="safety-time"></strong><small>已自动预留</small></article>
+            <article class="accent"><span>可用余量</span><strong id="slack-time"></strong><small id="slack-note"></small></article>
+          </div>
+        </section>
+
+        <aside class="assistant-panel">
+          <div class="assistant-title">
+            <span class="ai-orb">✦</span>
+            <div><strong>智能行程助手</strong><small>先保证准时，再挑好吃的</small></div>
+          </div>
+
+          <div class="message user-message" id="user-message"></div>
+          <div class="message ai-message">
+            <p id="decision-copy"></p>
+            <div class="decision-tag" id="decision-tag"></div>
+          </div>
+
+          <div class="recommendation-title">
+            <span>推荐方案</span><small id="result-count"></small>
+          </div>
+          <div id="recommendations" class="recommendations"></div>
+
+          <button class="primary-action" id="primary-action">采用推荐并开始导航 <span>→</span></button>
+          <p class="estimate-note">排队、停车与营业状态仍为估算，到店前会再次确认。</p>
+        </aside>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

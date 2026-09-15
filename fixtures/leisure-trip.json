@@ -1,0 +1,45 @@
+{
+  "origin": "杭州市区",
+  "destination": "千岛湖景区",
+  "departAt": "2026-09-15T08:00:00+08:00",
+  "arriveBy": "2026-09-15T12:30:00+08:00",
+  "purpose": "周末自驾游",
+  "travelMode": "driving",
+  "mealStyle": "sit_down",
+  "directTravelMinutes": 140,
+  "arrivalBufferMinutes": 15,
+  "maxRouteDetourMinutes": 25,
+  "cuisinePreferences": ["本地菜"],
+  "candidateRestaurants": [
+    {
+      "id": "express-fast-food",
+      "name": "高速口快餐",
+      "zone": "route",
+      "timing": "enroute",
+      "routeViaMinutes": 145,
+      "parkingMinutes": 4,
+      "walkMinutes": 2,
+      "queueMinutes": 4,
+      "mealMinutes": 20,
+      "rating": 4.0,
+      "preferenceScore": 0.35,
+      "openState": "open",
+      "tags": ["快餐"]
+    },
+    {
+      "id": "local-specialty",
+      "name": "沿途本地菜馆",
+      "zone": "route",
+      "timing": "enroute",
+      "routeViaMinutes": 155,
+      "parkingMinutes": 6,
+      "walkMinutes": 3,
+      "queueMinutes": 8,
+      "mealMinutes": 45,
+      "rating": 4.8,
+      "preferenceScore": 1,
+      "openState": "open",
+      "tags": ["本地菜", "特色菜"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "road-food-planner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Route-aware meal planning MCP server for the 路上吃什么 plugin.",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node scripts/demo.mjs fixtures/urgent-trip.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
